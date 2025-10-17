@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --cor-fundo: #2b1423;
+  --cor-menu: #4a3848;
+  --cor-card: #6b5a68;
+  --cor-caixa: #a59ca5;
+  --cor-texto: #ffffff;
+  --cor-pendente: #ff8c00;
+  --cor-solucionado: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* MENU LATERAL */
+.sidebar {
+  background-color: var(--cor-menu);
+  width: 220px;
+  padding: 30px 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 25px;
+}
+
+.sidebar a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+  flex: 1;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background-color: var(--cor-card);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* SEÇÃO CHAMADOS */
+.chamados {
+  background-color: var(--cor-menu);
+  border-radius: 10px;
+  flex: 2;
+  padding: 20px;
+}
+
+.chamados h2 {
+  margin-bottom: 15px;
+}
+
+.chamados ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.chamados li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--cor-caixa);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pendente {
+  background-color: var(--cor-pendente);
+}
+
+.solucionado {
+  border: 2px solid var(--cor-solucionado);
+}
+
+/* SEÇÃO LEMBRETES */
+.lembretes {
+  background-color: var(--cor-menu);
+  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+}
+
+.lembretes h2 {
+  margin-bottom: 15px;
+}
+
+.box-lembrete {
+  background-color: var(--cor-caixa);
+  border-radius: 10px;
+  height: 250px;
+}
