@@ -1,0 +1,138 @@
+/* ==============================
+   ESTILO BASE
+   ============================== */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b132b; /* fundo vinho escuro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ==============================
+   CONTAINER PRINCIPAL
+   ============================== */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==============================
+   LOGO
+   ============================== */
+.logo img {
+    width: 160px; /* tamanho do SVG */
+    margin-bottom: 40px; /* espaço entre logo e caixa */
+}
+
+/* ==============================
+   CAIXA DE LOGIN
+   ============================== */
+.login-box {
+    background-color: #4a344a;
+    padding: 60px 80px;
+    border-radius: 35px;
+    text-align: center;
+    width: 500px; /* tamanho semelhante à imagem original */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ==============================
+   TÍTULO "SUI"
+   ============================== */
+.titulo {
+    font-family: 'Monoton', cursive; /* Aplica a fonte Monoton */
+    font-size: 80px; /* ajuste conforme o design */
+    color: #f0f0f0; /* cor clara como na imagem */
+    text-align: center; /* centraliza */
+    letter-spacing: 2px; /* espaçamento entre letras */
+    margin: 20px 0;
+}
+
+
+/* ==============================
+   CAMPOS DE TEXTO
+   ============================== */
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    margin: 10px 0 5px 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #b4a8b4;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* ==============================
+   BOTÃO ENTRAR
+   ============================== */
+.btn-entrar {
+    background-color: #5a215a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 40px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #752a75;
+}
+
+/* ==============================
+   LINK "CADASTRE-SE"
+   ============================== */
+.cadastro {
+    margin-top: 25px;
+}
+
+.cadastro a {
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+.cadastro a:hover {
+    color: #d3d3d3;
+}
+
+.botao-cadastro {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5a215a;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-cadastro:hover {
+    background-color: #8a2c7b;
+}

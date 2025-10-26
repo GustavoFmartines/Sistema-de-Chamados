@@ -1,0 +1,110 @@
+body {
+  background-color: #2e142b; /* fundo roxo escuro */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.cadastro-box {
+  background-color: #51324a; /* roxo claro */
+  width: 90%;
+  max-width: 1300px;
+  height: 85%;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 48px; /* aumentei o tamanho */
+  color: #ffffff; /* branco para destacar mais */
+  background-color: rgba(0, 0, 0, 0.2); /* leve fundo escuro translúcido */
+  border-radius: 50%;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2); /* brilho ao passar o mouse */
+  transform: scale(1.1); /* leve aumento no hover */
+}
+
+
+/* Logo */
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 500px;
+  opacity: 4;
+}
+
+/* Formulário */
+.form-container {
+  flex: 2;
+  padding: 0 40px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-container hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  width: 80%;
+  margin: 0 auto 30px auto;
+}
+
+.form-container label {
+  color: #fff;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.form-control {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn-custom {
+  background-color: #631848;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 30px;
+  display: block;
+  margin: 20px auto 0 auto;
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #7a2058;
+}
