@@ -1,5 +1,5 @@
 body {
-  background-color: #2e142b; /* fundo roxo escuro */
+  background-color: #2e142b;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .cadastro-box {
-  background-color: #51324a; /* roxo claro */
+  background-color: #51324a;
   width: 90%;
   max-width: 1300px;
   height: 85%;
@@ -29,9 +29,9 @@ body {
   position: absolute;
   top: 30px;
   left: 30px;
-  font-size: 48px; /* aumentei o tamanho */
-  color: #ffffff; /* branco para destacar mais */
-  background-color: rgba(0, 0, 0, 0.2); /* leve fundo escuro translúcido */
+  font-size: 48px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   padding: 8px 12px;
   transition: all 0.3s ease;
@@ -39,12 +39,10 @@ body {
 
 .btn-voltar:hover {
   color: #fff;
-  background-color: rgba(255, 255, 255, 0.2); /* brilho ao passar o mouse */
-  transform: scale(1.1); /* leve aumento no hover */
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
-
-/* Logo */
 .logo-container {
   flex: 1;
   display: flex;
@@ -56,7 +54,6 @@ body {
   opacity: 4;
 }
 
-/* Formulário */
 .form-container {
   flex: 2;
   padding: 0 40px;

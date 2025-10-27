@@ -1,6 +1,3 @@
-/* ==============================
-   ESTILO BASE
-   ============================== */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 * {
@@ -10,7 +7,7 @@
 }
 
 body {
-    background-color: #2b132b; /* fundo vinho escuro */
+    background-color: #2b132b;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -18,51 +15,35 @@ body {
     height: 100vh;
 }
 
-/* ==============================
-   CONTAINER PRINCIPAL
-   ============================== */
 .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* ==============================
-   LOGO
-   ============================== */
 .logo img {
-    width: 160px; /* tamanho do SVG */
-    margin-bottom: 40px; /* espaço entre logo e caixa */
+    width: 160px;
+    margin-bottom: 40px;
 }
 
-/* ==============================
-   CAIXA DE LOGIN
-   ============================== */
 .login-box {
     background-color: #4a344a;
     padding: 60px 80px;
     border-radius: 35px;
     text-align: center;
-    width: 500px; /* tamanho semelhante à imagem original */
+    width: 500px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-/* ==============================
-   TÍTULO "SUI"
-   ============================== */
 .titulo {
-    font-family: 'Monoton', cursive; /* Aplica a fonte Monoton */
-    font-size: 80px; /* ajuste conforme o design */
-    color: #f0f0f0; /* cor clara como na imagem */
-    text-align: center; /* centraliza */
-    letter-spacing: 2px; /* espaçamento entre letras */
+    font-family: 'Monoton', cursive;
+    font-size: 80px;
+    color: #f0f0f0;
+    text-align: center;
+    letter-spacing: 2px;
     margin: 20px 0;
 }
 
-
-/* ==============================
-   CAMPOS DE TEXTO
-   ============================== */
 label {
     display: block;
     text-align: left;
@@ -82,9 +63,6 @@ input {
     font-size: 1rem;
 }
 
-/* ==============================
-   BOTÃO ENTRAR
-   ============================== */
 .btn-entrar {
     background-color: #5a215a;
     color: white;
