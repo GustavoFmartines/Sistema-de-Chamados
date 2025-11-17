@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responder Chamado</title>
+    <link rel="stylesheet" href="css/responder-chamado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- BOTÃO VOLTAR -->
+        <a href="detalhes_do_chamado.html" class="btn-voltar">← Voltar</a>
+
+        <h1 class="titulo">Responder Chamado #1024</h1>
+
+        <!-- INFO DO CHAMADO -->
+        <div class="card info">
+            <p><strong>Título:</strong> Impressora não funciona</p>
+            <p><strong>Setor:</strong> Administração</p>
+            <p><strong>Status:</strong> Em andamento</p>
+        </div>
+
+        <!-- ÁREA DO CHAT -->
+        <div class="card chat">
+
+            <div class="mensagens">
+
+                <div class="msg msg-user">
+                    <span class="autor">Você — 15:20</span>
+                    <p>Iniciando o atendimento. Pode me confirmar se a impressora está ligada?</p>
+                </div>
+
+                <div class="msg msg-outro">
+                    <span class="autor">Maria Fernanda — 15:21</span>
+                    <p>Sim, ela está ligada, mas o painel pisca em vermelho.</p>
+                </div>
+
+                <div class="msg msg-user">
+                    <span class="autor">Você — 15:25</span>
+                    <p>Entendi. Pode me enviar uma foto do painel, por favor?</p>
+                </div>
+
+            </div>
+
+            <!-- CAMPO DE RESPOSTA -->
+            <div class="input-area">
+                <textarea placeholder="Digite sua mensagem..."></textarea>
+                <button class="btn enviar">Enviar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

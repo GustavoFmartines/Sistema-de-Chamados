@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Chamado</title>
+    <link rel="stylesheet" href="css/editar_chamado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- BOTÃO VOLTAR -->
+        <a href="detalhes_do_chamado.html" class="btn-voltar">← Voltar</a>
+
+        <h1 class="titulo">Editar Chamado #1024</h1>
+
+        <div class="card form">
+
+            <form>
+
+                <!-- TÍTULO -->
+                <div class="campo">
+                    <label for="titulo">Título do Chamado</label>
+                    <input type="text" id="titulo" value="Impressora não funciona">
+                </div>
+
+                <!-- SETOR -->
+                <div class="campo">
+                    <label for="setor">Setor</label>
+                    <select id="setor">
+                        <option>Administração</option>
+                        <option>Financeiro</option>
+                        <option>TI</option>
+                        <option>Recursos Humanos</option>
+                    </select>
+                </div>
+
+                <!-- URGÊNCIA -->
+                <div class="campo">
+                    <label for="urgencia">Urgência</label>
+                    <select id="urgencia">
+                        <option>Baixa</option>
+                        <option>Média</option>
+                        <option selected>Alta</option>
+                    </select>
+                </div>
+
+                <!-- STATUS -->
+                <div class="campo">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option>Pendente</option>
+                        <option selected>Em andamento</option>
+                        <option>Concluído</option>
+                    </select>
+                </div>
+
+                <!-- DESCRIÇÃO -->
+                <div class="campo">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" rows="6">
+A impressora do setor de administração está apresentando falha na comunicação.
+Mesmo após reiniciar, o erro persiste. Funcionários não conseguem imprimir documentos.
+                    </textarea>
+                </div>
+
+                <!-- BOTÃO SALVAR -->
+                <button class="btn salvar">Salvar Alterações</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
