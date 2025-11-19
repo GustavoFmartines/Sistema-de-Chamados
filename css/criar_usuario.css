@@ -1,0 +1,91 @@
+/* ====== Página Geral ====== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c1326;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* ====== Container ====== */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* ====== Botão voltar ====== */
+.btn-voltar {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    color: #ff7db8;
+}
+
+/* ====== Card ====== */
+.card {
+    background-color: #3a1533;
+    padding: 35px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 154, 205, 0.3);
+}
+
+.card h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffaad8;
+}
+
+/* ====== Formulário ====== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: #ffd2ec;
+}
+
+input,
+select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #4b1d40;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(255, 118, 181, 0.3);
+}
+
+/* ====== Botão criar ====== */
+.btn-criar {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #ff4fa3;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-criar:hover {
+    background-color: #ff7ec4;
+}

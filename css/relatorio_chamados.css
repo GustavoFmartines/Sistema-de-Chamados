@@ -1,0 +1,149 @@
+/* ====== Página Geral ====== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c1326;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* ====== Container ====== */
+.container {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ====== Botão Voltar ====== */
+.btn-voltar {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    color: #ff7db8;
+}
+
+/* ====== Títulos ====== */
+.titulo {
+    margin: 0;
+    text-align: center;
+    color: #ffaad8;
+    font-size: 32px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #ffcdf1;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* ====== Card de Filtros ====== */
+.filtros-card {
+    background-color: #3a1533;
+    padding: 25px;
+    width: 750px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(255, 154, 205, 0.3);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.filtro label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #ffd8ef;
+}
+
+.filtro select,
+.filtro input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4b1d40;
+    color: #ffe6f5;
+    outline: none;
+}
+
+.btn-filtrar {
+    grid-column: span 4;
+    padding: 12px;
+    border: none;
+    background-color: #ff7db8;
+    color: #2c1326;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-filtrar:hover {
+    background-color: #ffa8d2;
+}
+
+/* ====== Tabela ====== */
+.tabela-card {
+    background-color: #3a1533;
+    padding: 25px;
+    width: 750px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 118, 181, 0.3);
+}
+
+.tabela-card h2 {
+    margin-top: 0;
+    color: #ffaad8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+thead {
+    background-color: #4b1d40;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #4a1f3d;
+}
+
+tbody tr:hover {
+    background-color: #5c234f;
+}
+
+/* ====== Cores de status ====== */
+.status.aberto {
+    color: #6db8ff;
+}
+
+.status.andamento {
+    color: #ffe66d;
+}
+
+.status.resolvido {
+    color: #6dff8d;
+}
+
+.status.pendente {
+    color: #ff6d6d;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Usuários</title>
+    <link rel="stylesheet" href="css/gerenciar_usuarios.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="home.html" class="btn-voltar">← Voltar</a>
+
+        <div class="header">
+            <h1>Gerenciar Usuários</h1>
+
+            <button class="btn-novo" onclick="window.location.href='criar_usuario.html'">
+                + Novo Usuário
+            </button>
+        </div>
+
+        <div class="filtros">
+            <input type="text" placeholder="Pesquisar usuário...">
+
+            <select>
+                <option value="">Filtrar por setor</option>
+                <option value="TI">TI</option>
+                <option value="RH">RH</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Diretoria">Diretoria</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Setor</th>
+                    <th>Tipo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>João Silva</td>
+                    <td>joao.silva@example.com</td>
+                    <td>TI</td>
+                    <td>Administrador</td>
+                    <td>
+                        <a href="perfil_usuario.html" class="acao ver">Ver</a>
+                        <a href="alterar_usuario.html" class="acao editar">Editar</a>
+                        <a href="excluir_usuario.html" class="acao excluir">Excluir</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Ana Ribeiro</td>
+                    <td>ana.rib@example.com</td>
+                    <td>RH</td>
+                    <td>Usuário</td>
+                    <td>
+                        <a href="perfil_usuario.html" class="acao ver">Ver</a>
+                        <a href="alterar_usuario.html" class="acao editar">Editar</a>
+                        <a href="excluir_usuario.html" class="acao excluir">Excluir</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Marcos Andrade</td>
+                    <td>marcos.and@example.com</td>
+                    <td>Financeiro</td>
+                    <td>Usuário</td>
+                    <td>
+                        <a href="perfil_usuario.html" class="acao ver">Ver</a>
+                        <a href="alterar_usuario.html" class="acao editar">Editar</a>
+                        <a href="excluir_usuario.html" class="acao excluir">Excluir</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* ====== Página geral ====== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c1326;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* ====== Container ====== */
+.container {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ====== Botão voltar ====== */
+.btn-voltar {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    align-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    color: #ff7db8;
+}
+
+/* ====== Títulos ====== */
+.titulo {
+    margin: 0;
+    text-align: center;
+    color: #ffaad8;
+    font-size: 32px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #ffcdf1;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+/* ====== Cards do painel ====== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #3a1533;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #ffe6f5;
+    box-shadow: 0 0 10px rgba(255, 154, 205, 0.3);
+    transition: 0.2s;
+}
+
+.card:hover {
+    background-color: #4b1d40;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 154, 205, 0.5);
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    color: #ffaad8;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.85;
+}

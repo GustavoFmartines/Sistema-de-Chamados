@@ -1,0 +1,136 @@
+/* ====== Página Geral ====== */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2c1326;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* ====== Container ====== */
+.container {
+    width: 100%;
+    padding: 30px;
+}
+
+/* ====== Botão voltar ====== */
+.btn-voltar {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.btn-voltar:hover {
+    color: #ff7db8;
+}
+
+/* ====== Cabeçalho ====== */
+.header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-novo {
+    background-color: #ff4fa3;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-novo:hover {
+    background-color: #ff7ec4;
+}
+
+/* ====== Filtros ====== */
+.filtros {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 240px;
+    background-color: #3a1533;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(255, 118, 181, 0.3);
+}
+
+/* ====== Tabela ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #3a1533;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4b1d40;
+}
+
+thead th {
+    padding: 14px;
+    text-align: left;
+    color: #ffaad8;
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background-color: #4b1d40;
+}
+
+tbody td {
+    padding: 14px;
+    border-bottom: 1px solid #552046;
+}
+
+/* ====== Ações ====== */
+.acao {
+    margin-right: 10px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.acao.ver {
+    background-color: #6a3ba1;
+}
+
+.acao.ver:hover {
+    background-color: #8656c2;
+}
+
+.acao.editar {
+    background-color: #d06ecf;
+}
+
+.acao.editar:hover {
+    background-color: #e48ee3;
+}
+
+.acao.excluir {
+    background-color: #b30000;
+}
+
+.acao.excluir:hover {
+    background-color: #e60000;
+}

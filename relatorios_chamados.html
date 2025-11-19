@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Chamados</title>
+    <link rel="stylesheet" href="css/relatorio_chamados.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="admin_painel.html" class="btn-voltar">← Voltar</a>
+
+        <h1 class="titulo">Relatório de Chamados</h1>
+        <p class="subtitulo">Filtros e estatísticas gerais dos chamados</p>
+
+        <div class="filtros-card">
+
+            <div class="filtro">
+                <label>Status:</label>
+                <select>
+                    <option value="">Todos</option>
+                    <option value="aberto">Aberto</option>
+                    <option value="pendente">Pendente</option>
+                    <option value="andamento">Em andamento</option>
+                    <option value="resolvido">Resolvido</option>
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label>Prioridade:</label>
+                <select>
+                    <option value="">Todas</option>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="filtro">
+                <label>Data Inicial:</label>
+                <input type="date">
+            </div>
+
+            <div class="filtro">
+                <label>Data Final:</label>
+                <input type="date">
+            </div>
+
+            <button class="btn-filtrar">Filtrar</button>
+
+        </div>
+
+        <div class="tabela-card">
+            <h2>Chamados Encontrados</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Usuário</th>
+                        <th>Status</th>
+                        <th>Prioridade</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>#124</td>
+                        <td>Computador não liga</td>
+                        <td>João Silva</td>
+                        <td class="status aberto">Aberto</td>
+                        <td>Média</td>
+                        <td>17/11/2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>#118</td>
+                        <td>Erro ao acessar sistema</td>
+                        <td>Maria Oliveira</td>
+                        <td class="status resolvido">Resolvido</td>
+                        <td>Alta</td>
+                        <td>15/11/2025</td>
+                    </tr>
+
+                    <tr>
+                        <td>#115</td>
+                        <td>Monitor piscando</td>
+                        <td>Pedro Santos</td>
+                        <td class="status andamento">Em andamento</td>
+                        <td>Baixa</td>
+                        <td>12/11/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Usuário</title>
+    <link rel="stylesheet" href="css/alterar_usuario.css">
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="menu-lateral">
+        <h2 class="logo">SUI</h2>
+
+        <nav>
+            <a href="home.html">🏠 Home</a>
+            <a href="criar_chamado.html">➕ Criar Chamado</a>
+            <a href="lista_chamados.html">📄 Lista de Chamados</a>
+            <a href="responder_chamado.html">💬 Responder Chamado</a>
+            <a href="alterar_usuario.html" class="ativo">⚙️ Alterar Usuário</a>
+        </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="conteudo">
+        <div class="topo">
+            <a href="home.html" class="voltar">⬅ Voltar</a>
+            <h1>Alterar Usuário</h1>
+        </div>
+
+        <div class="card">
+            <form>
+                <div class="linha">
+                    <div class="campo">
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="Digite o nome atualizado">
+                    </div>
+
+                    <div class="campo">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="exemplo@dominio.com">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>Celular</label>
+                        <input type="text" placeholder="(XX) XXXXX-XXXX">
+                    </div>
+
+                    <div class="campo">
+                        <label>Setor</label>
+                        <select>
+                            <option>TI</option>
+                            <option>RH</option>
+                            <option>Financeiro</option>
+                            <option>Marketing</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label>Nova Senha</label>
+                        <input type="password" placeholder="Digite a nova senha">
+                    </div>
+
+                    <div class="campo">
+                        <label>Confirmar Senha</label>
+                        <input type="password" placeholder="Repita a nova senha">
+                    </div>
+                </div>
+
+                <button class="btn-salvar">Salvar Alterações</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

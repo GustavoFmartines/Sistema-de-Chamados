@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ / Ajuda</title>
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <a href="home.html" class="btn-voltar">← Voltar</a>
+
+        <div class="card">
+            <h1>FAQ / Ajuda</h1>
+            <p class="subtitulo">Principais dúvidas sobre o sistema</p>
+
+            <div class="faq-item">
+                <button class="faq-pergunta">Como criar um chamado?</button>
+                <div class="faq-resposta">
+                    <p>Acesse o menu “Criar Chamado”, preencha o título, descrição e categoria, e clique em “Enviar”.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta">Onde acompanho meus chamados?</button>
+                <div class="faq-resposta">
+                    <p>Na página inicial, clique em “Meus Chamados” para visualizar o status de todos os seus tickets.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta">Como editar um chamado?</button>
+                <div class="faq-resposta">
+                    <p>Apenas chamados ainda não atendidos podem ser editados. Acesse “Detalhes do Chamado” e clique em “Editar”.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta">Esqueci minha senha, o que faço?</button>
+                <div class="faq-resposta">
+                    <p>Na tela de login, clique em “Recuperar Senha” para receber um link de redefinição por e-mail.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-pergunta">Sou administrador, onde gerencio usuários?</button>
+                <div class="faq-resposta">
+                    <p>Acesse o menu “Gerenciar Usuários” para criar, editar ou excluir contas.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const perguntas = document.querySelectorAll(".faq-pergunta");
+
+        perguntas.forEach(btn => {
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("ativo");
+                let resposta = btn.nextElementSibling;
+
+                if (resposta.style.maxHeight) {
+                    resposta.style.maxHeight = null;
+                } else {
+                    resposta.style.maxHeight = resposta.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
