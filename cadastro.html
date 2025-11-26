@@ -19,24 +19,24 @@
       <div class="form-container">
         <h2>Preencha seus dados</h2>
         <hr>
-        <form>
+        <form action="php/insert_users.php" method="post">
           <label for="usuario">Usuário</label>
-          <input type="text" id="usuario" class="form-control">
+          <input type="text" name="usuario" id="usuario" class="form-control">
 
           <label for="email">E-mail</label>
-          <input type="email" id="email" class="form-control">
+          <input type="email" name="email" id="email" class="form-control">
 
           <label for="senha">Senha</label>
-          <input type="password" id="senha" class="form-control">
+          <input type="password" name="senha" id="senha" class="form-control">
 
           <label for="confirmar">Confirmação de senha</label>
-          <input type="password" id="confirmar" class="form-control">
+          <input type="password" name="conf_senha" id="conf_senha" class="form-control">
 
           <label for="celular">Celular</label>
-          <input type="text" id="celular" class="form-control">
+          <input type="text" name="celular" id="celular" class="form-control">
 
           <label for="setor">Setor</label>
-          <input type="text" id="setor" class="form-control">
+          <input type="text" name="setor" id="setor" class="form-control">
 
           <button type="submit" class="btn btn-custom">Cadastre-se</button>
         </form>
