@@ -20,7 +20,19 @@
     </nav>
 
     <main class="conteudo">
-        <div class="topo">Home</div>
+        <div class="topo">
+            <?php
+                // session_start();
+                // if(isset($_SESSION['id_user'])){
+                //     echo "Olá, ".$_SESSION['nm_user'];
+                // }
+                // else{
+                //     echo "<script>alert('Você não está logado!'); history.back();  </script>"
+                // }
+            ?>
+            Home
+
+        </div>
 
         <div class="area-central">
             <section class="caixa-chamados">

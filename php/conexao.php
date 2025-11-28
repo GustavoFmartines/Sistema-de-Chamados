@@ -3,7 +3,7 @@
 $server = "localhost";
 $user = "root";
 $password = "admin";
-$database = "sui_db";
+$database = "sistema_chamados";
 
 
 $conexao = new mysqli($server, $user, $password, $database);

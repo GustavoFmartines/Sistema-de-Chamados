@@ -12,11 +12,12 @@ CREATE TABLE tb_user (
     email VARCHAR(40) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL,
     nr_celular VARCHAR(11),
-    fk_id_setor INT,
-    dt_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP,
-
-    FOREIGN KEY (fk_id_setor) REFERENCES tb_setor(id_setor)
+    setor varchar(40),
+    dt_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+select * from tb_user;
+
 
 CREATE TABLE tb_chamado (
     id_chamado INT PRIMARY KEY AUTO_INCREMENT,
