@@ -29,34 +29,87 @@
     </aside>
     <main class="main-area">
       <article class="form-card" role="form" aria-labelledby="form-title">
+        <?php
+          session_start();
+          if(isset($_SESSION['id_user'])){
+            $nome_usuario = $_SESSION['id_user'];
+
+            echo "Olá, ".$_SESSION['nm_user'];
+          }
+          else{
+            echo "<script>alert('Você não está logado!'); history.back();  </script>";
+          }
+        ?>
         <h1 id="form-title" class="card-title">Descreva o incidente ou a requisição</h1>
+
         <div class="divider" aria-hidden="true"></div>
 
-        <form action="#" method="post" class="chamado-form" novalidate>
+        <form action="php/cad_chamados.php" method="post" class="chamado-form" novalidate>
+
           <div class="row">
             <label for="tipo">Tipo</label>
-            <input id="tipo" name="tipo" type="text" placeholder="Incidente/Requisição">
+            <select class="#" id="tipo" name="tipo">
+              <?php
+                include 'php/conexao.php';
+                $select = "SELECT * FROM tb_tipo";
+                $query = $conexao->query($select);
+                while ($resultado = $query->fetch_assoc()) { ?>
+                  <option value="<?php echo $resultado['id_tipo']?>"><?php echo $resultado['nm_tipo']?></option>
+                <?php }
+              ?>
+            </select>
           </div>
+
 
           <div class="row">
             <label for="categoria">Categoria</label>
-            <input id="categoria" name="categoria" type="text" placeholder="----------">
+            <select class="#" id="categoria" name="categoria">
+              <?php
+                include 'php/conexao.php';
+                $select = "SELECT * FROM tb_categoria";
+                $query = $conexao->query($select);
+                while ($resultado = $query->fetch_assoc()) { ?>
+                  <option value="id_categoria"><?php echo $resultado /*continuar*/['nm_categoria']?></option>
+                <?php }
+              ?>
+            </select>
           </div>
+
+
 
           <div class="row">
             <label for="urgencia">Urgência</label>
-            <input id="urgencia" name="urgencia" type="text" placeholder="----------">
+            <select class="#" id="urgencia" name="urgencia">
+              <?php
+                include 'php/conexao.php';
+                $select = "SELECT * FROM tb_urgencia";
+                $query = $conexao->query($select);
+                while ($resultado = $query->fetch_assoc()) { ?>
+                  <option value="id_urgencia"><?php echo $resultado['nm_urgencia']?></option>
+                <?php }
+              ?>
+            </select>
           </div>
+
+
 
           <div class="row">
             <label for="titulo">Título</label>
             <input id="titulo" name="titulo" type="text" placeholder="----------">
           </div>
 
+
+
+
           <div class="row">
             <label for="descricao">Descrição</label>
             <textarea id="descricao" name="descricao" placeholder="Descreva aqui..." rows="8"></textarea>
           </div>
+
+
+
+
+
 
           <div class="row actions">
             <button type="submit" class="btn-submit">Enviar</button>

@@ -20,7 +20,7 @@ $insert = "INSERT INTO tb_usuario VALUE (null, '$nome', '$email ', '$senha','$ce
 $query = $conexao->query($insert);
 
 if ($query == true) {
-    echo "<script> alert('Usiário cadastrado com sucesso'); window.href = '../index.html'</script>"
+    echo "<script> alert('Usiário cadastrado com sucesso'); window.href = '../index.html'</script>";
 }
 
 

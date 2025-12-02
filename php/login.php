@@ -8,7 +8,7 @@ include 'conexao.php'; //conexao com o banco mysql
 
 $select = "SELECT * FROM tb_user WHERE email = '$email'"; //verifica se é a pessoa
 
-$query = $conexao->query($select); //todos dados estão aqui
+$query = $conexao->query($select); //todos dados do bd estão aqui
 
 $resultado = $query->fetch_assoc(); //fetch_assoc pega o primeiro registro digitado, coloca tudo na var e transforma em uma array 
 

@@ -12,23 +12,25 @@
     <nav class="menu-lateral">
         <ul>
             <li>Home</li>
-            <li><a href="chamado.html">Criar um chamado</a></li>
-            <li>Chamados</li>
-            <li>Reservas</li>
-            <li>FAQ</li>
+            <li><a href="chamado.php">Criar um chamado</a></li>
+            <li><a href="#">Chamados</a></li>
+            <li><a href="#">Reservas</a></li>
+            <li><a href="#">FAQ</a></li>
         </ul>
     </nav>
 
     <main class="conteudo">
         <div class="topo">
             <?php
-                // session_start();
-                // if(isset($_SESSION['id_user'])){
-                //     echo "Olá, ".$_SESSION['nm_user'];
-                // }
-                // else{
-                //     echo "<script>alert('Você não está logado!'); history.back();  </script>"
-                // }
+                session_start();
+                if(isset($_SESSION['id_user'])){
+                    $nome_usuario = $_SESSION['id_user'];
+
+                    echo "Olá, ".$_SESSION['nm_user'];
+                }
+                else{
+                    echo "<script>alert('Você não está logado!'); history.back();  </script>";
+                }
             ?>
             Home
 
@@ -39,7 +41,7 @@
                 <h2>Chamados</h2>
                 <hr>
                 <ul>
-                    <li><a href="chamado.html">Novo</a></li>
+                    <li><a href="chamado.php">Novo</a></li>
                     <li>Em andamento (atribuído)</li>
                     <li>Em atendimento (planejado)</li>
                     <li><span class="status pendente"></span>Pendente</li>

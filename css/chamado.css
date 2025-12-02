@@ -128,7 +128,8 @@ label {
 }
 
 input[type="text"],
-textarea {
+textarea,
+select {
   background: var(--card-inner);
   border: none;
   border-radius: 6px;
