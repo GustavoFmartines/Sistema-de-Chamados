@@ -18,21 +18,52 @@ CREATE TABLE tb_user (
 
 select * from tb_user;
 
+/*insert do banco*/
+create table tb_tipo(
+	id_tipo int auto_increment primary key,
+    nm_tipo varchar(20)
+);
+
+insert into tb_tipo value 
+	(null, 'Incidente'), 
+    (null, 'Requisição');
+
+create table tb_categoria(
+	id_categoria int auto_increment primary key,
+    nm_categoria varchar(30)
+);
+
+insert into tb_categoria value 
+	(null, 'Notebook'),
+    (null, 'Desktop'),
+    (null, 'Celular'),
+    (null, 'Redes');
+
+create table tb_urgencia(
+	id_urgencia int auto_increment primary key,
+    nm_urgencia varchar(20)
+);
+
+insert into tb_urgencia value
+	(null, 'Muito baixa'),
+    (null, 'Baixa'),
+    (null, 'Média'),
+    (null, 'Alta'),
+    (null, 'Muito Alta');
+
+ /*fim insert*/
 
 CREATE TABLE tb_chamado (
-    id_chamado INT PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(100) NOT NULL,
-    descricao TEXT NOT NULL,
-    status_chamado ENUM('aberto','em_andamento','finalizado') DEFAULT 'aberto',
-    prioridade ENUM('baixa','media','alta') DEFAULT 'media',
-    dt_abertura DATETIME DEFAULT CURRENT_TIMESTAMP,
-    dt_fechamento DATETIME NULL,
-
-    fk_id_usuario INT NOT NULL,
-    fk_id_setor INT NOT NULL,
-
-    FOREIGN KEY (fk_id_usuario) REFERENCES tb_user(id_user),
-    FOREIGN KEY (fk_id_setor) REFERENCES tb_setor(id_setor)
+	cd_chamado int auto_increment primary key, 
+    fk_tipo int,
+    fk_categoria int,
+    fk_urgencia int,
+    titulo varchar(60),
+    descricao varchar(100),
+    
+    foreign key (fk_tipo) references tb_tipo (id_tipo),
+	foreign key (fk_categoria) references tb_categoria (id_categoria),
+	foreign key (fk_urgencia) references tb_urgencia (id_urgencia)
 );
 
 CREATE TABLE log_chamado (
