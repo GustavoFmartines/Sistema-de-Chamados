@@ -2,7 +2,7 @@
 //Informações para conectar no SGBD
 $server = "localhost";
 $user = "root";
-$password = "root";
+$password = "admin";
 $database = "sistema_chamados";
 
 

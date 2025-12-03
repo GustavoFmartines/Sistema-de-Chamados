@@ -66,6 +66,26 @@ CREATE TABLE tb_chamado (
 	foreign key (fk_urgencia) references tb_urgencia (id_urgencia)
 );
 
+select t.nm_tipo, c.nm_categoria, u.nm_urgencia
+from tb_tipo as t
+inner join tb_chamado as ch
+on ch.fk_tipo = t.id_tipo
+inner join tb_categoria as c
+on ch.fk_categoria = c.id_categoria
+inner join tb_urgencia as u
+on ch.fk_urgencia = u.id_urgencia;
+
+
+
+insert into tb_user VALUE (null, 'Ana', 'ana@gmail.com', '123456','13456987521','Admin', default);
+select * from tb_user;
+
+
+insert into tb_chamado value (null, 1, 1, 1, 'teste', 'teste');
+insert into tb_chamado value (null, 2, 3, 1, 'teste', 'teste');
+select * from tb_chamado;
+
+
 CREATE TABLE log_chamado (
     id_log INT PRIMARY KEY AUTO_INCREMENT,
     id_chamado INT NOT NULL,

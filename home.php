@@ -6,16 +6,17 @@
     <title>Home - SUI</title>
     <link rel="stylesheet" href="css/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script> <!-- fontawesome -->
 </head>
 <body>
 
     <nav class="menu-lateral">
         <ul>
-            <li>Home</li>
-            <li><a href="chamado.php">Criar um chamado</a></li>
-            <li><a href="#">Chamados</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><i class="fa-solid fa-house"></i><a href="home.php"> Home</a></li>
+            <li><i class="fa-solid fa-plus"></i><a href="chamado.php"> Novo chamado</a></li>
+            <li><i class="fa-solid fa-list"></i><a href="lista_de_chamados.php"> Lista de chamados</a></li>
+            <li><i class="fa-solid fa-circle-question"></i><a href="faq.html"> FAQ</a></li>
+            <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="index.html"> Sair</a></li>
         </ul>
     </nav>
 
