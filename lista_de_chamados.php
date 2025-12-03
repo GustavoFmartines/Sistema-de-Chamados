@@ -154,7 +154,7 @@
                       inner join tb_categoria as c
                       on ch.fk_categoria = c.id_categoria
                       inner join tb_urgencia as u
-                      on ch.fk_urgencia = u.id_urgencia"; //verifica se é a pessoa
+                      on ch.fk_urgencia = u.id_urgencia"; 
                     $query = $conexao->query($select); //todos dados estão aqui
                     while ($resultado = $query->fetch_assoc()){
                         
